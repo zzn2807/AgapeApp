@@ -1,4 +1,4 @@
-import HHS_Logo from "../img/HHS_Logo.png"
+import Agape_Logo from "../img/Agape-Logo.png"
 import "../css/Header.css"
 import { useContext } from "react";
 import MenuContext from "../Context/MenuContext";
@@ -7,7 +7,7 @@ function Header() {
     return (
         <div className="header">
             <div className="burger-menu" onClick={()=>setMenuOpen(true)}>&equiv;</div>
-            <img className="logo" src={HHS_Logo}/>
+            <img className="logo" src={Agape_Logo}/>
         </div>
 
     );

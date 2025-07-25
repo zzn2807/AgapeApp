@@ -1,24 +1,85 @@
-*{
+@font-face {
+    font-family: "Montserrat";
+    src: url(fonts/Montserrat/Montserrat-Black.ttf) format("truetype");
+    src: url(fonts/Montserrat/Montserrat-BlackItalic.ttf) format("truetype");
+    src: url(fonts/Montserrat/Montserrat-Bold.ttf) format("truetype");
+    src: url(fonts/Montserrat/Montserrat-BoldItalic.ttf) format("truetype");
+    src: url(fonts/Montserrat/Montserrat-ExtraBold.ttf) format("truetype");
+    src: url(fonts/Montserrat/Montserrat-ExtraBoldItalic.ttf) format("truetype");
+    src: url(fonts/Montserrat/Montserrat-ExtraLight.ttf) format("truetype");
+    src: url(fonts/Montserrat/Montserrat-ExtraLightItalic.ttf) format("truetype");
+    src: url(fonts/Montserrat/Montserrat-Italic.ttf) format("truetype");
+    src: url(fonts/Montserrat/Montserrat-Light.ttf) format("truetype");
+    src: url(fonts/Montserrat/Montserrat-LightItalic.ttf) format("truetype");
+    src: url(fonts/Montserrat/Montserrat-Medium.ttf) format("truetype");
+    src: url(fonts/Montserrat/Montserrat-MediumItalic.ttf) format("truetype");
+    src: url(fonts/Montserrat/Montserrat-SemiBold.ttf) format("truetype");
+    src: url(fonts/Montserrat/Montserrat-SemiBoldItalic.ttf) format("truetype");
+    src: url(fonts/Montserrat/Montserrat-Thin.ttf) format("truetype");
+    src: url(fonts/Montserrat/Montserrat-ThinItalic.ttf) format("truetype");
+    src: url(fonts/Montserrat/Montserrat-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(fonts/Poppins/Poppins-Black.ttf) format("truetype");
+    src: url(fonts/Poppins/Poppins-BlackItalic.ttf) format("truetype");
+    src: url(fonts/Poppins/Poppins-Bold.ttf) format("truetype");
+    src: url(fonts/Poppins/Poppins-BoldItalic.ttf) format("truetype");
+    src: url(fonts/Poppins/Poppins-ExtraBold.ttf) format("truetype");
+    src: url(fonts/Poppins/Poppins-ExtraBoldItalic.ttf) format("truetype");
+    src: url(fonts/Poppins/Poppins-ExtraLight.ttf) format("truetype");
+    src: url(fonts/Poppins/Poppins-ExtraLightItalic.ttf) format("truetype");
+    src: url(fonts/Poppins/Poppins-Italic.ttf) format("truetype");
+    src: url(fonts/Poppins/Poppins-Light.ttf) format("truetype");
+    src: url(fonts/Poppins/Poppins-LightItalic.ttf) format("truetype");
+    src: url(fonts/Poppins/Poppins-Medium.ttf) format("truetype");
+    src: url(fonts/Poppins/Poppins-MediumItalic.ttf) format("truetype");
+    src: url(fonts/Poppins/Poppins-SemiBold.ttf) format("truetype");
+    src: url(fonts/Poppins/Poppins-SemiBoldItalic.ttf) format("truetype");
+    src: url(fonts/Poppins/Poppins-Thin.ttf) format("truetype");
+    src: url(fonts/Poppins/Poppins-ThinItalic.ttf) format("truetype");
+    src: url(fonts/Poppins/Poppins-Regular.ttf) format("truetype");
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    --agape-light-bg: #B3B08A;
+    --agape-green-bg: #4B5320;
+    --agape-light: #F9F8E4;
+    --agape-dark: #2B2B2B;
 }
-h1,p,.btn, table, form, .content-ul{
-    color: white;
-    font-family: Tinos;
+
+h1,
+p,
+.btn,
+table,
+form,
+.content-ul {
+    color: var(--agape-dark);
+    font-family: "Montserrat";
 }
-h1{
-    font-size: 24px;
+
+h1 {
+    font-size: 22px;
     margin-bottom: 10px;
+    font-family: Poppins;
+
 }
-p, .content-ul, table{
-    font-size: 18px;
+
+p,
+.content-ul,
+table {
+    font-size: 16px;
     text-align: justify;
     margin-bottom: 10px;
 }
-.content{
+
+.content {
     padding: calc(135px + 30px) 5vw 70px;
-    background-color: #4CAF50;
+    background-color: var(--agape-light-bg);
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -26,20 +87,20 @@ p, .content-ul, table{
     justify-content: space-around;
 }
 
-.content-img{
+.content-img {
     max-width: 90vw;
     border-radius: 5px;
     margin-bottom: 30px;
 }
 
-.btn{
+.btn {
     display: block;
     text-decoration: none;
-    color: #333;
+    color: var(--agape-light);
     font-weight: bold;
     text-align: center;
     padding: 20px 30px;
-    background-color: white;
+    background-color: var(--agape-dark);
     border-radius: 20px;
     width: 60vw;
     max-width: 400px;
@@ -48,7 +109,7 @@ p, .content-ul, table{
 }
 
 .btn:hover {
-    background-color: #eee;
+    background-color: #111;
 }
 
 table {
@@ -59,11 +120,11 @@ td {
     padding-bottom: 10px;
 }
 
-td:first-child{
+td:first-child {
     text-align: left;
 }
 
-td:last-child{
+td:last-child {
     text-align: right;
 }
 
@@ -71,29 +132,28 @@ form {
     width: 90vw;
     max-width: 600px;
 }
-.form-div{
+
+.form-div {
     margin-bottom: 30px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
 
-.form-div input{
+.form-div input {
     padding: 10px;
     border-radius: 5px;
     width: 100%;
 }
 
-.flex-row{
+.flex-row {
     flex-direction: row;
 }
 
-.form-submit{
+.form-submit {
     padding: 10px;
     border-radius: 10px;
     width: 60%;
 }
 
-@media screen and (min-width:1000px) {
-
-}
+@media screen and (min-width:1000px) {}

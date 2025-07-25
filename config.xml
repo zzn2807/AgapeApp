@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="io.cordova.hellocordova" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name short="HHS">Hope Health Systems</name>
-    <description>Informational app for Hope Health Systems</description>
-    <icon src="src/img/HHS_Logo.png"/>
+    <name short="Agape">Agape Health Systems</name>
+    <description>Informational app for Agape Health Systems</description>
+    <icon src="src/img/Agape-Logo.png"/>
     <author email="dnwokolo@hopehealthsystems.com" href="https://github.com/zzn2807">
         David Nwokolo
     </author>

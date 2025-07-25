@@ -1,11 +1,15 @@
 *{
     box-sizing: border-box;
+    --agape-light-bg: #B3B08A;
+    --agape-green-bg: #4B5320;
+    --agape-light: #F9F8E4;
+    --agape-dark: #2B2B2B;
 }
 
 .footer{
     display: flex;
     justify-content: center;
-    background-color: #eef3ee;
+    background-color: var(--agape-green-bg);
     position: fixed;
     bottom: 0;
     min-width: 100vw;
@@ -15,6 +19,7 @@
     max-height: 40px;
     max-width: 40px;
     margin: 0px 20px;
+    fill: var(--agape-light);
 
     
 }

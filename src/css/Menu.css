@@ -1,20 +1,69 @@
+@font-face {
+    font-family: "Montserrat";
+    src: url(fonts/Montserrat/Montserrat-Black.ttf) format("truetype");
+    src: url(fonts/Montserrat/Montserrat-BlackItalic.ttf) format("truetype");
+    src: url(fonts/Montserrat/Montserrat-Bold.ttf) format("truetype");
+    src: url(fonts/Montserrat/Montserrat-BoldItalic.ttf) format("truetype");
+    src: url(fonts/Montserrat/Montserrat-ExtraBold.ttf) format("truetype");
+    src: url(fonts/Montserrat/Montserrat-ExtraBoldItalic.ttf) format("truetype");
+    src: url(fonts/Montserrat/Montserrat-ExtraLight.ttf) format("truetype");
+    src: url(fonts/Montserrat/Montserrat-ExtraLightItalic.ttf) format("truetype");
+    src: url(fonts/Montserrat/Montserrat-Italic.ttf) format("truetype");
+    src: url(fonts/Montserrat/Montserrat-Light.ttf) format("truetype");
+    src: url(fonts/Montserrat/Montserrat-LightItalic.ttf) format("truetype");
+    src: url(fonts/Montserrat/Montserrat-Medium.ttf) format("truetype");
+    src: url(fonts/Montserrat/Montserrat-MediumItalic.ttf) format("truetype");
+    src: url(fonts/Montserrat/Montserrat-SemiBold.ttf) format("truetype");
+    src: url(fonts/Montserrat/Montserrat-SemiBoldItalic.ttf) format("truetype");
+    src: url(fonts/Montserrat/Montserrat-Thin.ttf) format("truetype");
+    src: url(fonts/Montserrat/Montserrat-ThinItalic.ttf) format("truetype");
+    src: url(fonts/Montserrat/Montserrat-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url(fonts/Poppins/Poppins-Black.ttf) format("truetype");
+    src: url(fonts/Poppins/Poppins-BlackItalic.ttf) format("truetype");
+    src: url(fonts/Poppins/Poppins-Bold.ttf) format("truetype");
+    src: url(fonts/Poppins/Poppins-BoldItalic.ttf) format("truetype");
+    src: url(fonts/Poppins/Poppins-ExtraBold.ttf) format("truetype");
+    src: url(fonts/Poppins/Poppins-ExtraBoldItalic.ttf) format("truetype");
+    src: url(fonts/Poppins/Poppins-ExtraLight.ttf) format("truetype");
+    src: url(fonts/Poppins/Poppins-ExtraLightItalic.ttf) format("truetype");
+    src: url(fonts/Poppins/Poppins-Italic.ttf) format("truetype");
+    src: url(fonts/Poppins/Poppins-Light.ttf) format("truetype");
+    src: url(fonts/Poppins/Poppins-LightItalic.ttf) format("truetype");
+    src: url(fonts/Poppins/Poppins-Medium.ttf) format("truetype");
+    src: url(fonts/Poppins/Poppins-MediumItalic.ttf) format("truetype");
+    src: url(fonts/Poppins/Poppins-SemiBold.ttf) format("truetype");
+    src: url(fonts/Poppins/Poppins-SemiBoldItalic.ttf) format("truetype");
+    src: url(fonts/Poppins/Poppins-Thin.ttf) format("truetype");
+    src: url(fonts/Poppins/Poppins-ThinItalic.ttf) format("truetype");
+    src: url(fonts/Poppins/Poppins-Regular.ttf) format("truetype");
+}
+
 *{
     box-sizing: border-box;
+    --agape-light-bg: #B3B08A;
+    --agape-green-bg: #4B5320;
+    --agape-light: #F9F8E4;
+    --agape-dark: #2B2B2B;
 }
 .menu-title,.menu, .menu-x, .menu-list a{
-    color: #333;
-    font-family: Tinos;
+    color: var(--agape-dark);
+    font-family: Montserrat;
 }
 
 .menu-header{
     display: flex;
     justify-content: space-between;
     padding: 40px 10px 0px;
+    font-family: Poppins;
 }
 .menu{
     z-index: 1;
     position: fixed;
-    background-color: #eef3ee;
+    background-color: var(--agape-light);
     font-weight: bold;
     width: 0;
     height: 100vh;
@@ -48,7 +97,7 @@
 }
 
 .menu-list a:hover,.menu-list a.active{
-    background-color: #aab3aa;
+    background-color: #E9E8D4;
 }
 
 .menu-x{
@@ -64,7 +113,9 @@
         width: calc(100vw - 150px);
         max-height: 60px;
         box-shadow: none;
-        top: calc(135px - 60px)
+        top: calc(135px - 60px);
+        background-color: var(--agape-green-bg);
+        
 
     }
     .menu-header {
@@ -76,6 +127,7 @@
     .menu-list{
         flex-direction: row;
         max-height: 60px;
+        
     }
 
 
@@ -87,8 +139,14 @@
         justify-content: center;
         flex: 1;
         margin-left: 10px;
+        color: var(--agape-light);
         
     }
+
+    .menu-list a:hover, .menu-list a.active{
+        background-color: #6B7340;
+    }
+
     .menu-list li {
         display: flex;
         align-items: flex-end;

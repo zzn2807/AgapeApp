@@ -1,3 +1,11 @@
+*{
+    box-sizing: border-box;
+    --agape-light-bg: #B3B08A;
+    --agape-green-bg: #4B5320;
+    --agape-light: #F9F8E4;
+    --agape-dark: #2B2B2B;
+}
+
 .App {
   text-align: center;
 }
