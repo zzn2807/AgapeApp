@@ -47,12 +47,15 @@
     padding: 0;
     box-sizing: border-box;
     --agape-light-bg: #B3B08A;
+    --agape-card-bg: #cfceb8e5;
     --agape-green-bg: #4B5320;
     --agape-light: #F9F8E4;
     --agape-dark: #2B2B2B;
 }
 
 h1,
+h2,
+h3,
 p,
 .btn,
 table,
@@ -62,11 +65,19 @@ form,
     font-family: "Montserrat";
 }
 
-h1 {
-    font-size: 22px;
+h1, h2, h3 {
+    font-size: 26px;
     margin-bottom: 10px;
     font-family: Poppins;
 
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size:  17px;
 }
 
 p,
@@ -154,6 +165,31 @@ form {
     padding: 10px;
     border-radius: 10px;
     width: 60%;
+}
+.cards{
+    flex-wrap: wrap;
+}
+
+.card {
+    min-width: 350px;
+    flex: 1;
+    flex-basis: 30%;
+    text-align: center;
+    background-color: var(--agape-card-bg);
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px;
+    margin-bottom: 20px;
+}
+
+.card * {
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.card h3 {
+    background-color: var(--agape-green-bg);
+    color: var(--agape-light);
+    border-radius: 10px 10px 0px 0px;
 }
 
 @media screen and (min-width:1000px) {}
