@@ -192,4 +192,8 @@ form {
     border-radius: 10px 10px 0px 0px;
 }
 
+.card p {
+    text-align: center;
+}
+
 @media screen and (min-width:1000px) {}
