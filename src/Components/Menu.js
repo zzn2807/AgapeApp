@@ -6,7 +6,8 @@ function Menu() {
     const { setMenuOpen } = useContext(MenuContext);
     const [touchStart, setTouchStart] = useState(null)
     const [touchEnd, setTouchEnd] = useState(null)
-
+    const newsletter = "https://www.canva.com/design/DAG7tvf1N3E/B5z234jVxkEqs3K3p-rXDw/view?utm_content=DAG7tvf1N3E&utm_campaign=designshare&utm_medium=link2&utm_source=uniquelinks&utlId=h59fdb322fe#1"
+    const survey = "https://forms.office.com/r/2xx9qufVMj"
     // the required distance between touchStart and touchEnd to be detected as a swipe
     const minSwipeDistance = 50
 
@@ -37,8 +38,8 @@ function Menu() {
             <ul className="menu-list">
                 <li className="menu-item"><NavLink to="/" end onClick={()=>{setMenuOpen(false);return true}}>Home</NavLink></li>
                 <li className="menu-item"><NavLink to="/public-hours" onClick={()=>{setMenuOpen(false);return true}}>Public Hours</NavLink></li>
-                <li className="menu-item"><NavLink to="/news" onClick={()=>{setMenuOpen(false);return true}}>Newsletters/Announcements</NavLink></li>
-                <li className="menu-item"><a href="https://forms.office.com/r/2xx9qufVMj" onClick={()=>{setMenuOpen(false);return true}}>Client Satisfaction Survey</a></li>
+                <li className="menu-item"><a href={newsletter} onClick={()=>{setMenuOpen(false);return true}}>Newsletters/Announcements</a></li>
+                <li className="menu-item"><a href={survey} onClick={()=>{setMenuOpen(false);return true}}>Client Satisfaction Survey</a></li>
                 <li className="menu-item"><NavLink to="/misc" onClick={()=>{setMenuOpen(false);return true}}>Miscellaneous</NavLink></li>
             </ul>
         </div>
